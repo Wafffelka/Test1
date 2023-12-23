@@ -11,16 +11,15 @@
 // тип_данных имяПеременной = значение;
 // camelCase: firstNumber, secondNumber, thirdNumber
 // Convert.ToInt32("123") => 123(int)
-// Console.ReadLine() -  получение информации из консоли
-// Console.Write("Введите 1 число: ");
-// int firstNumber = Convert.ToInt32(Console.ReadLine());
+Console.ReadLine() -  получение информации из консоли
+Console.Write("Введите 1 число: ");
+int firstNumber = Convert.ToInt32(Console.ReadLine());
 
-// Console.Write("Введите 2 число: ");
-// int secondNumber = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите 2 число: ");
+int secondNumber = Convert.ToInt32(Console.ReadLine());
 // // "==" - проверка на равенство: 5 == 5 (true), 4 == 5 (false)
-// if (firstNumber == secondNumber * secondNumber)
-// // firstNumber = 25, secondNumber = 5
-// // Является ли первое число квадратом второго?
+if (firstNumber == secondNumber * secondNumber)
+// // firstNumber = 25, secondNumber = 5 // Является ли первое число квадратом второго?
 {
     // "Привет" + "мир" = "Приветмир" (конкатенация)
     Console.WriteLine("Да, " + firstNumber + " является квадратом от " + secondNumber);
@@ -74,5 +73,5 @@ else
    Console.WriteLine("Вы ввели некорректное значение");
 }
 
-int a = 3;   // Введенные числа равны `3`
+// int a = 3;   // Введенные числа равны `3`
 Console.WriteLine("Введенные числа равны " + "`" + a + "`");
