@@ -32,8 +32,34 @@ InputOfNumbers();
 //числами. Напишите программу, которая покажет количество чётных 
 //чисел в массиве.
 
-
+не успеваю
 
 // Задача 3: Напишите программу, которая перевернёт одномерный
 //массив (первый элемент станет последним, второй – предпоследним 
 //и т.д.)
+
+int[] array = new array[size];
+Consol.Write("Введите размер массива: ")ж
+for( int i = 0, i < array.Length, i++)
+{
+    Console.Write($"Введиете {i + 1} значение массива");
+    array[i] = Convert.ToInt32(Consol.ReadLine());
+}
+
+int ArrayReversal(TemporaryArray[])
+{
+    int half = TemporaryArray.Length / 2;
+    for(int i = 0, i < half, i++)
+    {
+        int support = TemporaryArray[i];
+        TemporaryArray[i] = TemporaryArray[-1 + i];
+        TemporaryArray[-1 + i] = support;
+    }
+    return TemporaryArray
+}
+
+Console.Write("\nПеревернутый массив: ");
+foreach (int number in TemporaryArray)
+{
+    Console.Write(number + " ");
+}
