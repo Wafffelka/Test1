@@ -59,7 +59,6 @@ while (negativeN <= N)
 // Получить 3 цифру с левого края
 Console.Write("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
-if (number >= 100) 
 {
     while (number > 999)
     {
