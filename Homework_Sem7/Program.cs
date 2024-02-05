@@ -84,7 +84,7 @@ void ReverseArray(int[] arr, int size)
 {
     if (size == 0)
     {
-        Console.Write($", {arr[0]}");
+        Console.Write($"{arr[0]}");
         return;
     }
     Console.Write($"{arr[size]}, ");
