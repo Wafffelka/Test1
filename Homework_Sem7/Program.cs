@@ -68,6 +68,8 @@
 // Задайте произвольный массив. Выведете его элементы, 
 // начиная с конца. Использовать рекурсию, не использовать циклы.
 
+
+
 int[] CreateArray(int size)
 {
     int[] array = new int[size];
@@ -78,21 +80,23 @@ int[] CreateArray(int size)
     return array;
 }
 
-void ReverseArray(int[] arr)
+void ReverseArray(int[] arr, int size)
 {
-
-    if (arr.Length < 0)
+    if (size == 0)
     {
+        Console.Write($", {arr[0]}");
         return;
     }
-    Console.Write($", {arr[^1]}");
-    ReverseArray(Array.Resize(ref arr, (arr.Length - 1)));
+    Console.Write($"{arr[size]}, ");
+    ReverseArray(arr, (size - 1));
 }
+
+
 
 Console.Write("Введите размер массива: ");
 int InputSize = Convert.ToInt32(Console.ReadLine());
 int[] ArrayNew = CreateArray(InputSize);
 
-// Console.WriteLine($"Массив: [ {string.Join("; ", res)} ]");
+// Console.WriteLine($"Массив: [ {string.Join("; ", ArrayNew)} ]");
 Console.Write("Перевернутый массив: ");
-ReverseArray(ArrayNew);
+ReverseArray(ArrayNew, (InputSize - 1));
